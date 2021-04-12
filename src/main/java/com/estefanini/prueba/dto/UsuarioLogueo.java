@@ -1,0 +1,24 @@
+package com.estefanini.prueba.dto;
+
+import javax.validation.constraints.NotBlank;
+
+public class UsuarioLogueo {
+    @NotBlank
+    private String userName;
+    @NotBlank
+    private String password;
+    public UsuarioLogueo() {
+    }
+    public String getUserName() {
+        return userName;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
